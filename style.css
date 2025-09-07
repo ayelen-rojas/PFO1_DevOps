@@ -76,7 +76,71 @@ li:hover {
     color: #555;
 }
 
+/* --- Formulario  --- */
+.form-container {
+    margin-top: 1.8rem;
+    text-align: center;
+    /* centramos todo el contenido */
+}
 
+.form-container h3 {
+    color: #3f3c64;
+    margin-bottom: 1rem;
+    font-size: 1.4em;
+    text-align: center;
+    /* centramos el título */
+}
+
+.form-container label {
+    display: block;
+    margin: 0.8rem 0 0.3rem;
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+}
+
+.form-container input {
+    width: 95%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-container input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+    outline: none;
+}
+
+.form-container input::placeholder {
+    color: #a6a0c9;
+    font-style: italic;
+}
+
+.form-container button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.form-container button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #764ba2, #667eea);
+}
+
+#respuesta {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #3f3c64;
+}
 /* --- Pie  --- */
 .card-footer {
     background-color: #f7f7f7;
