@@ -1,0 +1,87 @@
+/* --- Reseteo básico y estilos globales --- */
+body {
+    font-family: 'Montserrat', sans-serif; 
+    background: linear-gradient(135deg, #667eea, #764ba2); 
+    color: #333;
+    margin: 0;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Contenedor principal --- */
+.card {
+    background-color: rgba(255, 255, 255, 0.95); 
+    border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden; 
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* --- Encabezado --- */
+.card-header {
+    background-color: rgba(0, 0, 0, 0.05); 
+    padding: 30px 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #3f3c64;
+    font-size: 2em; 
+}
+
+/* --- Tarjeta --- */
+.card-body {
+    padding: 20px 30px;
+}
+
+h2 {
+    color: #764ba2;
+    border-bottom: 2px solid #667eea; 
+    display: inline-block; 
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+li {
+    background-color: rgba(102, 126, 234, 0.1); 
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out; 
+}
+
+li:hover {
+    transform: scale(1.1); 
+    background-color: rgba(102, 126, 234, 0.2);
+}
+
+.card-body p {
+    font-size: 1.1em;
+    line-height: 1.6; 
+    color: #555;
+}
+
+
+/* --- Pie  --- */
+.card-footer {
+    background-color: #f7f7f7;
+    padding: 15px;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #888;
+}
